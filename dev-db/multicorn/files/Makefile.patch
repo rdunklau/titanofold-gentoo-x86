@@ -1,0 +1,11 @@
+--- Makefile	2013-06-26 12:52:36.423004320 +0200
++++ Makefile	2013-06-26 13:02:29.070745683 +0200
+@@ -19,8 +19,6 @@
+ 
+ all: preflight-check sql/$(EXTENSION)--$(EXTVERSION).sql
+ 
+-install: python_code
+-
+ sql/$(EXTENSION)--$(EXTVERSION).sql: sql/$(EXTENSION).sql
+ 	cp $< $@
+ 
